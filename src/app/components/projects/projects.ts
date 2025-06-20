@@ -10,8 +10,10 @@ import { Modal } from "../../shared/modal/modal";
 
 export class Projects {
   showModal = false;
+  description = '';
 
-  toggleDesignModal() {
+  toggleDesignModal(description: string) {
+    this.description = description;
     this.showModal = !this.showModal;
   }
 }

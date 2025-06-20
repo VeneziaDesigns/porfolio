@@ -6,7 +6,70 @@
 </h2>
 <!-- Image Grid -->
 <div class="grid grid-cols-2 sm:grid-cols-2 gap-2">
-  <div class="group block relative overflow-hidden rounded-lg">
+  <!-- Porfolio -->
+  <div class="group block relative overflow-hidden rounded-lg border-1">
+    <img
+      class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+      src="assets/porfolio.png"
+      alt="porfolio"
+    />
+    <div
+      class="absolute bottom-1 inset-x-1 flex justify-between opacity-0 group-hover:opacity-100 transition"
+    >
+      <!-- Izquierda: Diseño -->
+      <div
+        class="cursor-pointer flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+        title="Haz clic para ver la descripción de diseño"
+        (click)="toggleDesignModal('Porfolio personal desarrollado como una Single Page Application (SPA) con Angular y Tailwind CSS. Funciona como un currículum interactivo donde presento mis proyectos, habilidades técnicas, formación académica y experiencia laboral.')"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-braces-icon lucide-braces"
+        >
+          <path
+            d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"
+          />
+          <path
+            d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"
+          />
+        </svg>
+        <span class="text-xs">Diseño</span>
+      </div>
+      <!-- Derecha: Ir -->
+      <a
+        href="#"
+        class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+      >
+        <svg
+          class="shrink-0 size-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <span class="text-xs">Ir</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- BabyApp -->
+  <div class="group block relative overflow-hidden rounded-lg border-1">
     <img
       class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
       src="assets/BabyApp.png"
@@ -19,7 +82,133 @@
       <div
         class="cursor-pointer flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
         title="Haz clic para ver la descripción de diseño"
-        (click)="toggleDesignModal()"
+        (click)="toggleDesignModal('BabyApp es una solución informática diseñada para facilitar el registro y control de las tomas de un bebé, así como la gestión del stock de productos esenciales y el acceso a información relevante sobre el desarrollo infantil. La aplicación ha sido desarrollada utilizando ASP.NET (MVC) y SQLite, ofreciendo una plataforma eficiente y fácil de usar para padres y cuidadores.')"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-braces-icon lucide-braces"
+        >
+          <path
+            d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"
+          />
+          <path
+            d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"
+          />
+        </svg>
+        <span class="text-xs">Diseño</span>
+      </div>
+      <!-- Derecha: Ir -->
+      <a
+        href="http://adridomain.duckdns.org/BabyApp"
+        target="_blank"
+        class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+      >
+        <svg
+          class="shrink-0 size-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <span class="text-xs">Ir</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- BabyApp -->
+  <div class="group block relative overflow-hidden rounded-lg border-1">
+    <img
+      class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+      src="assets/BabyApp.png"
+      alt="BabyApp"
+    />
+    <div
+      class="absolute bottom-1 inset-x-1 flex justify-between opacity-0 group-hover:opacity-100 transition"
+    >
+      <!-- Izquierda: Diseño -->
+      <div
+        class="cursor-pointer flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+        title="Haz clic para ver la descripción de diseño"
+        (click)="toggleDesignModal('BabyApp es una solución informática diseñada para facilitar el registro y control de las tomas de un bebé, así como la gestión del stock de productos esenciales y el acceso a información relevante sobre el desarrollo infantil. La aplicación ha sido desarrollada utilizando ASP.NET (MVC) y SQLite, ofreciendo una plataforma eficiente y fácil de usar para padres y cuidadores.')"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-braces-icon lucide-braces"
+        >
+          <path
+            d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"
+          />
+          <path
+            d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"
+          />
+        </svg>
+        <span class="text-xs">Diseño</span>
+      </div>
+      <!-- Derecha: Ir -->
+      <a
+        href="http://adridomain.duckdns.org/BabyApp"
+        target="_blank"
+        class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+      >
+        <svg
+          class="shrink-0 size-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <span class="text-xs">Ir</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- BabyApp -->
+  <div class="group block relative overflow-hidden rounded-lg border-1">
+    <img
+      class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+      src="assets/BabyApp.png"
+      alt="BabyApp"
+    />
+    <div
+      class="absolute bottom-1 inset-x-1 flex justify-between opacity-0 group-hover:opacity-100 transition"
+    >
+      <!-- Izquierda: Diseño -->
+      <div
+        class="cursor-pointer flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+        title="Haz clic para ver la descripción de diseño"
+        (click)="toggleDesignModal('BabyApp es una solución informática diseñada para facilitar el registro y control de las tomas de un bebé, así como la gestión del stock de productos esenciales y el acceso a información relevante sobre el desarrollo infantil. La aplicación ha sido desarrollada utilizando ASP.NET (MVC) y SQLite, ofreciendo una plataforma eficiente y fácil de usar para padres y cuidadores.')"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -71,169 +260,9 @@
   <!-- Modal -->
   @if (showModal) {
   <app-modal
-    [description]="'BabyApp es una solución informática diseñada para facilitar el registro y control de las tomas de un bebé, así como la gestión del stock de productos esenciales y el acceso a información relevante sobre el desarrollo infantil. La aplicación ha sido desarrollada utilizando ASP.NET (MVC) y SQLite, ofreciendo una plataforma eficiente y fácil de usar para padres y cuidadores.'"
-    (closed)="toggleDesignModal()"
+    [description]="description"
+    (closed)="toggleDesignModal('')"
   ></app-modal>
   }
-
-  <a class="group block relative overflow-hidden rounded-lg" href="#">
-    <img
-      class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
-      src="https://images.unsplash.com/photo-1616427592793-67b858804534?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Project"
-    />
-    <div
-      class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition"
-    >
-      <div
-        class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
-      >
-        <svg
-          class="shrink-0 size-3"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.3-4.3" />
-        </svg>
-        <span class="text-xs">Ir</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="group block relative overflow-hidden rounded-lg" href="#">
-    <img
-      class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
-      src="https://images.unsplash.com/photo-1516131206008-dd041a9764fd?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Project"
-    />
-    <div
-      class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition"
-    >
-      <div
-        class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
-      >
-        <svg
-          class="shrink-0 size-3"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.3-4.3" />
-        </svg>
-        <span class="text-xs">Ir</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="group block relative overflow-hidden rounded-lg" href="#">
-    <img
-      class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
-      src="https://images.unsplash.com/photo-1707760696486-2a2cd7e0b6a6?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Project"
-    />
-    <div
-      class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition"
-    >
-      <div
-        class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
-      >
-        <svg
-          class="shrink-0 size-3"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.3-4.3" />
-        </svg>
-        <span class="text-xs">Ir</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="group block relative overflow-hidden rounded-lg" href="#">
-    <img
-      class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
-      src="https://images.unsplash.com/photo-1585159812596-fac104f2f069?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Project"
-    />
-    <div
-      class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition"
-    >
-      <div
-        class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
-      >
-        <svg
-          class="shrink-0 size-3"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.3-4.3" />
-        </svg>
-        <span class="text-xs">Ir</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="group block relative overflow-hidden rounded-lg" href="#">
-    <img
-      class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
-      src="https://images.unsplash.com/photo-1654131300276-db70adf4f85d?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Project"
-    />
-    <div
-      class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition"
-    >
-      <div
-        class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
-      >
-        <svg
-          class="shrink-0 size-3"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.3-4.3" />
-        </svg>
-        <span class="text-xs">Ir</span>
-      </div>
-    </div>
-  </a>
 </div>
 <!-- End Image Grid -->
